@@ -1,0 +1,4 @@
+emg_gestures/
+.ipynb_checkpoints/
+__pycache__/
+.venv/
