@@ -51,9 +51,13 @@ almost identical, and mixing them between training and testing would inflate the
 ## Results
 
 | Indicator | Result |
-|---|---|
+| :--- | :--- |
 | Baseline (most frequent class) | F1-macro 0.049 · accuracy 0.174 |
-| SVM RBF (C = 1, γ = 0.03), cross-validation per subject | F1-macro 0.821 ± 0.076 | **8 never- before-seen test subjects** | **F1-macro 0.829 · accuracy 0.829 · AUC macro 0.955** | Leave-One-Subject-Out (36 subjects) | Global macro F1 0.830; per subject from 0.32 to 0.99 | Normalization per subject (brief calibration) | Test macro F1 0.829 → 0.909 | Inference latency | 3 ms per window, with ≈ 100 ms available |
+| SVM RBF ($C = 1, \gamma = 0.03$), cross-validation per subject | F1-macro 0.821 ± 0.076 |
+| **8 never-before-seen test subjects** | **F1-macro 0.829 · accuracy 0.829 · AUC macro 0.955** |
+| Leave-One-Subject-Out (36 subjects) | Global macro F1 0.830; per subject from 0.32 to 0.99 |
+| Normalization per subject (brief calibration) | Test macro F1 0.829 → 0.909 |
+| Inference latency | 3 ms per window, with ≈ 100 ms available |
 
 ### Main findings
 
@@ -111,21 +115,6 @@ The first load cell downloads and unzips the dataset into the folder `emg_gestur
 It requires an internet connection and about 250 MB of disk space (about 650 MB in
 memory when loading all records).
 
-## Créditos
-
-- **Profesor:** [Fabio Augusto Gonzalez](https://dis.unal.edu.co/~fgonza/)
-- **Asistente docente:** [Rosa Alejandra Superlano Esquibel](https://www.linkedin.com/in/alejandrasuperlano/)
-- **Coordinador de virtualización:** [Edder Hernández Forero](https://www.linkedin.com/in/edder-hernandez-forero-28aa8b207/)
-- **Dataset:** *EMG Data for Gestures*, UCI Machine Learning Repository (CC BY 4.0).
-
-**Universidad Nacional de Colombia** · Facultad de Ingeniería
-
-## Licencia
-
-Código bajo licencia MIT (ver `LICENSE`). El dataset se rige por su propia licencia (CC BY 4.0).
-
-## Credits
-
 - **Professor:** [Fabio Augusto Gonzalez](https://dis.unal.edu.co/~fgonza/)
 - **Teaching assistant:** [Rosa Alejandra Superlano Esquibel](https://www.linkedin.com/in/alejandrasuperlano/)
 - **Virtualization Coordinator:** [Edder Hernández Forero](https://www.linkedin.com/in/edder-hernandez-forero-28aa8b207/)
@@ -133,5 +122,4 @@ Código bajo licencia MIT (ver `LICENSE`). El dataset se rige por su propia lice
 
 **National University of Colombia** · Faculty of Engineering
 
-## License
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
