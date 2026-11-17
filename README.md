@@ -6,9 +6,11 @@ Applied project of the subject **Computational Learning (Introduction to Machine
 
 **Authors:** Marina Antolínez Cabrero · Jorge Esau Tierradentro Cruz
 
-🎥 [Explanatory video (YouTube)](https://www.youtube.com/watch?v=eVvN9gcQzFg) ·
-📄 [Presentation (PDF)](presentation/Presentation_EMG_gestures.pdf) · 
-📓[[Final Notebook](final-project/Final_Project_EMG_gestures.ipynb) ·
+🎥 [Explanatory video (YouTube)](https://www.youtube.com/watch?v=eVvN9gcQzFg)
+
+📄 [Presentation (PDF)](presentation/Presentation_EMG_gestures.pdf)
+
+📓[[Final Notebook](final-project/Final_Project_EMG_gestures.ipynb)
 
 - - -
 
@@ -51,12 +53,7 @@ almost identical, and mixing them between training and testing would inflate the
 | Indicator | Result |
 |---|---|
 | Baseline (most frequent class) | F1-macro 0.049 · accuracy 0.174 |
-| SVM RBF (C = 1, γ = 0.03), cross-validation per subject | F1-macro 0.821 ± 0.076 
-| 
-| **8 never- before-seen test subjects** | **F1-macro 0.829 · accuracy 0.829 · AUC macro 0.955** |
-| Leave-One-Subject-Out (36 subjects) | Global macro F1 0.830; per subject from 0.32 to 0.99 | 
-| Normalization per subject (brief calibration) | Test macro F1 0.829 → 0.909 |
-| Inference latency | 3 ms per window, with ≈ 100 ms available |
+| SVM RBF (C = 1, γ = 0.03), cross-validation per subject | F1-macro 0.821 ± 0.076 | **8 never- before-seen test subjects** | **F1-macro 0.829 · accuracy 0.829 · AUC macro 0.955** | Leave-One-Subject-Out (36 subjects) | Global macro F1 0.830; per subject from 0.32 to 0.99 | Normalization per subject (brief calibration) | Test macro F1 0.829 → 0.909 | Inference latency | 3 ms per window, with ≈ 100 ms available |
 
 ### Main findings
 
@@ -85,13 +82,12 @@ available between windows.
 The project was developed in phases throughout the course. Each folder contains the notebook from its phase, and the final notebook integrates all the work.
 
 ```
-.
-├── phase-1-understanding-the-business/                 # Project framework, scope, risk plan, data loading (SPANISH)
-├── phase-2-understanding-the-data/                     # Data quality and relationship between channels (SPANISH)
-├── phase-3-preparation-of-the-data/                    # Cleaning and segmentation in windows (SPANISH)
-├── phase-4-modeling/ (SPANISH)                         # Features, models, hyperparameters, and evaluation
+├── phase-1-understanding-the-business/     # Project framework, scope, risk plan, data loading (SPANISH)
+├── phase-2-understanding-the-data/         # Data quality and relationship between channels (SPANISH)
+├── phase-3-preparation-of-the-data/        # Cleaning and segmentation in windows (SPANISH)
+├── phase-4-modeling/                       # Features, models, hyperparameters, and evaluation (SPANISH) 
 ├── final-project/ (ENGLISH)
-├── presentation/ (SPANISH)                             # Project presentation (PDF)
+├── presentation/                           # Project presentation (PDF) (SPANISH) 
 ├── requirements.txt
 └── README.md
 ```
